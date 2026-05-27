@@ -1,5 +1,3 @@
-variable var_bucket_name  {
-
-type= string
-
+variable "var_bucket_name" {
+  default = "dineshstore987654"
 }

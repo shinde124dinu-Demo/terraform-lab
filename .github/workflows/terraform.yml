@@ -2,11 +2,12 @@ name: Terraform Azure Pipeline
 
 on:
   push:
-    branches:
-      - master
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
   workflow_dispatch:
-  inputs:
-  destroy:
+    inputs:
+      destroy:
         description: 'Set to true to destroy resources'
         required: false
         default: 'false'

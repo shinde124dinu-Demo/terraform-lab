@@ -1,10 +1,10 @@
 resource "azurerm_resource_group" "rg" {
-  name     = "github-action-rg"
+  name     = "rg-01"
   location = "Central India"
 }
 
 resource "azurerm_storage_account" "store" {
-  name                     = "dineshstore12345"
+  name                     = "dineshstore1234"
   resource_group_name      = azurerm_resource_group.rg.name
   location                 = azurerm_resource_group.rg.location
   account_tier             = "Standard"

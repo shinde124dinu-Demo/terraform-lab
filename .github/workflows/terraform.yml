@@ -5,11 +5,12 @@ on:
     branches:
       - master
 workflow_dispatch:
-    inputs:
-      destroy:
-        description: "Set true to destroy resources"
-        required: true
-        default: "false"
+ inputs:
+  destroy:
+        description: 'Set to true to destroy resources'
+        required: false
+        default: 'false'
+    
 jobs:
   terraform:
     runs-on: ubuntu-latest

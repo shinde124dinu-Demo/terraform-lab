@@ -7,9 +7,9 @@ on:
 workflow_dispatch:
     inputs:
       destroy:
-        description: 'Set to true to destroy resources'
-        required: false
-        default: 'false'
+        description: "Set true to destroy resources"
+        required: true
+        default: "false"
 jobs:
   terraform:
     runs-on: ubuntu-latest
